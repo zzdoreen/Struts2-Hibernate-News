@@ -1,0 +1,23 @@
+form{
+	width:500px;
+}
+h2{
+	color:red;
+}
+
+h3{
+	color:deepskyblue;
+	text-decoration:underline;
+}
+
+
+fieldset{
+	padding:10px;
+	border:double green 4px;
+}
+
+legend{
+	color:green;
+	font:bold 14px tahoma;
+	border:solid 1px green;
+}

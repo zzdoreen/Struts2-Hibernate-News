@@ -1,0 +1,94 @@
+/* 闁告挸绉撮幃妤冪博椤栫儑鎷峰顐＄箚闁烩晝顭堥崣褔鎯冮崟顖氬赋缂傚喛鎷�,婵炲鍔戦崳鎾矗椤忓嫬甯掗悹渚�鏅叉繛鍥偨閵娿儺妯嬮悶娑樻湰閺岀喎顕ｉ敓锟� */
+{
+    /* 濞戞挸锕ｇ槐鍫曞炊閸撗冾暬闂佹澘绉堕悿鍡樸亜閿燂拷 */
+    "imageActionName": "uploadimage", /* 闁圭瑳鍡╂斀濞戞挸锕ｇ槐鍫曞炊閸撗冾暬闁汇劌鍨穋tion闁告艾绉惰ⅷ */
+    "imageFieldName": "upfile", /* 闁圭粯鍔掑锕傛儍閸曨偅绂堥柣妤�娲╅妴鍐础閺囩偞鍊崇紒澶涙嫹 */
+    "imageMaxSize": 2048000, /* 濞戞挸锕ｇ槐鑸靛緞瑜嶉惃顒勬⒔閹邦剙鐓戦柨娑樿嫰瀹曠喐鎷呭畝锟� */
+    "imageAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"], /* 濞戞挸锕ｇ槐鍫曞炊閸撗冾暬闁哄秶鍘х槐锟犲及閸撗佷粵 */
+    "imageCompressEnable": true, /* 闁哄嫷鍨伴幆渚�宕㈢�ｎ剛绱氶柛銉ュ⒔婢э拷,濮掓稒顭堥濠氬及閻ョue */
+    "imageCompressBorder": 1600, /* 闁搞儱澧芥晶鏍储鐎ｎ剛绱氶柡鍫嫹闂傦拷閼愁垳鐝堕梻鍕姇閸╋拷 */
+    "imageInsertAlign": "none", /* 闁圭粯甯掗崣鍡涙儍閸曨偅绂堥柣妤�娲︾拠鐐哄礉閵婏附鐓欑�殿噯鎷� */
+    "imageUrlPrefix": "/news", /* 闁搞儱澧芥晶鏍媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "imagePathFormat": "/ueditor/image/{yyyy}{mm}{dd}/{time}{rand:6}", /* 濞戞挸锕ｇ槐鑸电┍濠靛棛鎽犻悹渚灠缁讹拷,闁告瑯鍨禍鎺楁嚊椤忓嫮鏆板☉鏂款槷缁绘氨锟芥稒顭堥惌鎯ь嚗閸曨偅瀚查柡鍌氭矗濞嗐垽宕ュ鍡欏鐎殿噯鎷� */
+                                /* {filename} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣闁告鍠愰弸鍐╃鐠虹儤鍊�,闂佹澘绉堕悿鍡樻交濞嗘挶锟藉秹妫侀敓鐣屾啺娴ｈ鏆堥柟鏉跨箣閼垫垿寮崶锕佺闁活喕绶氬Λ鑸碉紣閿燂拷 */
+                                /* {rand:6} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣闂傚懎绻戝┃锟介柡渚婃嫹,闁告艾閰ｅ浼存儍閸曨剚娈堕悗娑欘殕濡叉悂姊捐箛鏃�绨氶柡浣瑰濞堟垶鎷呭鍡樻 */
+                                /* {time} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣闁哄啫鐖煎Λ鍧楀箣閿燂拷 */
+                                /* {yyyy} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣闁搞儲绋愮紞鍛寸嵁缂堢姴鏁� */
+                                /* {yy} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣濞戞挶鍊撶紞鍛寸嵁缂堢姴鏁� */
+                                /* {mm} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣濞戞挶鍊撶紞鍛村嫉閸粌鏁� */
+                                /* {dd} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣濞戞挶鍊撶紞鍛村籍閵夛附鍩� */
+                                /* {hh} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣濞戞挶鍊撶紞鍛焊韫囨梹顦� */
+                                /* {ii} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣濞戞挶鍊撶紞鍛村礆閸℃稒瀵� */
+                                /* {ss} 濞村吋纰嶅ù娑㈠箲閵忊�崇亣濞戞挶鍊撶紞鍛矓閿燂拷 */
+                                /* 闂傚牏鍋炵涵鍓侊拷娑欘殘椤戯拷 \ : * ? " < > | */
+                                /* 闁稿繒鏌夐顒佹媴閹捐埖绠欑紒鎯с仒缁楀倿寮崶銊ｏ拷锟�: fex.baidu.com/ueditor/#use-format_upload_filename */
+
+    /* 婵炴垵鍊块悽顐﹀炊閸撗冾暬濞戞挸锕ｇ槐鍫曟煀瀹ュ洨鏋傚銈忔嫹 */
+    "scrawlActionName": "uploadscrawl", /* 闁圭瑳鍡╂斀濞戞挸锕ｇ槐璺衡槈閸岀偟鏁ㄩ柣銊ュ灧ction闁告艾绉惰ⅷ */
+    "scrawlFieldName": "upfile", /* 闁圭粯鍔掑锕傛儍閸曨偅绂堥柣妤�娲╅妴鍐础閺囩偞鍊崇紒澶涙嫹 */
+    "scrawlPathFormat": "/ueditor/jsp/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}", /* 濞戞挸锕ｇ槐鑸电┍濠靛棛鎽犻悹渚灠缁讹拷,闁告瑯鍨禍鎺楁嚊椤忓嫮鏆板☉鏂款槷缁绘氨锟芥稒顭堥惌鎯ь嚗閸曨偅瀚查柡鍌氭矗濞嗐垽宕ュ鍡欏鐎殿噯鎷� */
+    "scrawlMaxSize": 2048000, /* 濞戞挸锕ｇ槐鑸靛緞瑜嶉惃顒勬⒔閹邦剙鐓戦柨娑樿嫰瀹曠喐鎷呭畝锟� */
+    "scrawlUrlPrefix": "", /* 闁搞儱澧芥晶鏍媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "scrawlInsertAlign": "none",
+
+    /* 闁规惌浜滃ù妯侯啅閵夈儱寰斿☉鎾筹梗缁憋拷 */
+    "snapscreenActionName": "uploadimage", /* 闁圭瑳鍡╂斀濞戞挸锕ｇ槐鍫曞箣椤忓嫭绂堥柣銊ュ灧ction闁告艾绉惰ⅷ */
+    "snapscreenPathFormat": "/ueditor/jsp/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}", /* 濞戞挸锕ｇ槐鑸电┍濠靛棛鎽犻悹渚灠缁讹拷,闁告瑯鍨禍鎺楁嚊椤忓嫮鏆板☉鏂款槷缁绘氨锟芥稒顭堥惌鎯ь嚗閸曨偅瀚查柡鍌氭矗濞嗐垽宕ュ鍡欏鐎殿噯鎷� */
+    "snapscreenUrlPrefix": "", /* 闁搞儱澧芥晶鏍媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "snapscreenInsertAlign": "none", /* 闁圭粯甯掗崣鍡涙儍閸曨偅绂堥柣妤�娲︾拠鐐哄礉閵婏附鐓欑�殿噯鎷� */
+
+    /* 闁硅埖鎸歌ぐ鍥ㄦ交濠婂應鏌ら柛銉ュ⒔婢ф牠鏌婂鍥╂瀭 */
+    "catcherLocalDomain": ["127.0.0.1", "localhost", "img.baidu.com"],
+    "catcherActionName": "catchimage", /* 闁圭瑳鍡╂斀闁硅埖鎸歌ぐ鍥ㄦ交濠婂應鏌ら柛銉ュ⒔婢ф牠鎯冮崚鐒巘ion闁告艾绉惰ⅷ */
+    "catcherFieldName": "source", /* 闁圭粯鍔掑锕傛儍閸曨偅绂堥柣妤�娲ら崹顏嗘偘閵娿劊锟藉啴宕￠弴鐐村�崇紒澶涙嫹 */
+    "catcherPathFormat": "/ueditor/jsp/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}", /* 濞戞挸锕ｇ槐鑸电┍濠靛棛鎽犻悹渚灠缁讹拷,闁告瑯鍨禍鎺楁嚊椤忓嫮鏆板☉鏂款槷缁绘氨锟芥稒顭堥惌鎯ь嚗閸曨偅瀚查柡鍌氭矗濞嗐垽宕ュ鍡欏鐎殿噯鎷� */
+    "catcherUrlPrefix": "", /* 闁搞儱澧芥晶鏍媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "catcherMaxSize": 2048000, /* 濞戞挸锕ｇ槐鑸靛緞瑜嶉惃顒勬⒔閹邦剙鐓戦柨娑樿嫰瀹曠喐鎷呭畝锟� */
+    "catcherAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"], /* 闁硅埖鎸歌ぐ鍥炊閸撗冾暬闁哄秶鍘х槐锟犲及閸撗佷粵 */
+
+    /* 濞戞挸锕ｇ槐鍓佹喆閸℃侗鏆ラ梺鏉跨Ф閻わ拷 */
+    "videoActionName": "uploadvideo", /* 闁圭瑳鍡╂斀濞戞挸锕ｇ槐鍓佹喆閸℃侗鏆ラ柣銊ュ灧ction闁告艾绉惰ⅷ */
+    "videoFieldName": "upfile", /* 闁圭粯鍔掑锕傛儍閸曨噮娼掑Λ鐗堝灱閵嗗啴宕￠弴鐐村�崇紒澶涙嫹 */
+    "videoPathFormat": "/ueditor/jsp/upload/video/{yyyy}{mm}{dd}/{time}{rand:6}", /* 濞戞挸锕ｇ槐鑸电┍濠靛棛鎽犻悹渚灠缁讹拷,闁告瑯鍨禍鎺楁嚊椤忓嫮鏆板☉鏂款槷缁绘氨锟芥稒顭堥惌鎯ь嚗閸曨偅瀚查柡鍌氭矗濞嗐垽宕ュ鍡欏鐎殿噯鎷� */
+    "videoUrlPrefix": "", /* 閻熸瑥妫濋。鍓佹媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "videoMaxSize": 102400000, /* 濞戞挸锕ｇ槐鑸靛緞瑜嶉惃顒勬⒔閹邦剙鐓戦柨娑樿嫰瀹曠喐鎷呭畝顖炴晬瀹�鍕笡閻犱緤鎷�100MB */
+    "videoAllowFiles": [
+        ".flv", ".swf", ".mkv", ".avi", ".rm", ".rmvb", ".mpeg", ".mpg",
+        ".ogg", ".ogv", ".mov", ".wmv", ".mp4", ".webm", ".mp3", ".wav", ".mid"], /* 濞戞挸锕ｇ槐鍓佹喆閸℃侗鏆ラ柡宥囧帶缁憋繝寮伴崜褋浠� */
+
+    /* 濞戞挸锕ｇ槐鍫曞棘閸ワ附顐介梺鏉跨Ф閻わ拷 */
+    "fileActionName": "uploadfile", /* controller闂佽鎷�,闁圭瑳鍡╂斀濞戞挸锕ｇ槐鍓佹喆閸℃侗鏆ラ柣銊ュ灧ction闁告艾绉惰ⅷ */
+    "fileFieldName": "upfile", /* 闁圭粯鍔掑锕傛儍閸曨剚鐎ù鐘冲劶閵嗗啴宕￠弴鐐村�崇紒澶涙嫹 */
+    "filePathFormat": "/ueditor/jsp/upload/file/{yyyy}{mm}{dd}/{time}{rand:6}", /* 濞戞挸锕ｇ槐鑸电┍濠靛棛鎽犻悹渚灠缁讹拷,闁告瑯鍨禍鎺楁嚊椤忓嫮鏆板☉鏂款槷缁绘氨锟芥稒顭堥惌鎯ь嚗閸曨偅瀚查柡鍌氭矗濞嗐垽宕ュ鍡欏鐎殿噯鎷� */
+    "fileUrlPrefix": "", /* 闁哄倸娲ｅ▎銏㈡媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "fileMaxSize": 51200000, /* 濞戞挸锕ｇ槐鑸靛緞瑜嶉惃顒勬⒔閹邦剙鐓戦柨娑樿嫰瀹曠喐鎷呭畝顖炴晬瀹�鍕笡閻犱緤鎷�50MB */
+    "fileAllowFiles": [
+        ".png", ".jpg", ".jpeg", ".gif", ".bmp",
+        ".flv", ".swf", ".mkv", ".avi", ".rm", ".rmvb", ".mpeg", ".mpg",
+        ".ogg", ".ogv", ".mov", ".wmv", ".mp4", ".webm", ".mp3", ".wav", ".mid",
+        ".rar", ".zip", ".tar", ".gz", ".7z", ".bz2", ".cab", ".iso",
+        ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".pdf", ".txt", ".md", ".xml"
+    ], /* 濞戞挸锕ｇ槐鍫曞棘閸ワ附顐介柡宥囧帶缁憋繝寮伴崜褋浠� */
+
+    /* 闁告帗顨呴崵顓㈠箰閸パ呮毎闁烩晩鍠栫紞宥嗙▔鐎ｎ剚鐣遍柛銉ュ⒔婢э拷 */
+    "imageManagerActionName": "listimage", /* 闁圭瑳鍡╂斀闁搞儱澧芥晶鏍不閿涘嫭鍊為柣銊ュ灧ction闁告艾绉惰ⅷ */
+    "imageManagerListPath": "/ueditor/jsp/upload/image/", /* 闁圭娲ら悾鍓ф啺娴ｇ鐏欓柛鎴濇惈濞存﹢鎮ч崶鈺傜暠闁烩晩鍠栫紞锟� */
+    "imageManagerListSize": 20, /* 婵絽绻戦濂稿礆濡わ拷閸ゎ參寮崶锔筋偨闁轰椒鍗抽崳锟� */
+    "imageManagerUrlPrefix": "", /* 闁搞儱澧芥晶鏍媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "imageManagerInsertAlign": "none", /* 闁圭粯甯掗崣鍡涙儍閸曨偅绂堥柣妤�娲︾拠鐐哄礉閵婏附鐓欑�殿噯鎷� */
+    "imageManagerAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"], /* 闁告帗顨呴崵顓㈡儍閸曨剚鐎ù鐘插鐞氼偊宕归敓锟� */
+
+    /* 闁告帗顨呴崵顓㈠箰閸パ呮毎闁烩晩鍠栫紞宥嗙▔鐎ｎ剚鐣遍柡鍌氭矗濞嗭拷 */
+    "fileManagerActionName": "listfile", /* 闁圭瑳鍡╂斀闁哄倸娲ｅ▎銏㈢不閿涘嫭鍊為柣銊ュ灧ction闁告艾绉惰ⅷ */
+    "fileManagerListPath": "/ueditor/jsp/upload/file/", /* 闁圭娲ら悾鍓ф啺娴ｇ鐏欓柛鎴犲劋閺嬪啯绂掗崜浣圭暠闁烩晩鍠栫紞锟� */
+    "fileManagerUrlPrefix": "", /* 闁哄倸娲ｅ▎銏㈡媼閸ф锛栭悹渚灠缁剁偤宕滃鍥╃； */
+    "fileManagerListSize": 20, /* 婵絽绻戦濂稿礆濡わ拷閸ゎ參寮崶锔筋偨闁轰椒鍗抽崳锟� */
+    "fileManagerAllowFiles": [
+        ".png", ".jpg", ".jpeg", ".gif", ".bmp",
+        ".flv", ".swf", ".mkv", ".avi", ".rm", ".rmvb", ".mpeg", ".mpg",
+        ".ogg", ".ogv", ".mov", ".wmv", ".mp4", ".webm", ".mp3", ".wav", ".mid",
+        ".rar", ".zip", ".tar", ".gz", ".7z", ".bz2", ".cab", ".iso",
+        ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".pdf", ".txt", ".md", ".xml"
+    ] /* 闁告帗顨呴崵顓㈡儍閸曨剚鐎ù鐘插鐞氼偊宕归敓锟� */
+
+}

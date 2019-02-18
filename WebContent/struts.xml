@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name = "struts.devMode" value = "true" />
+   
+   <package name = "strutsGameWorld" extends = "hibernate-default">
+     <action name = "insertGame" class = "com.gmm.action.GameAction" method = "insertGame">
+         <result name = "success">/Success.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      <action name = "updateGame" class = "com.gmm.action.GameAction" method = "updateGame">
+         <result name = "success">/Success.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      <action name = "deleteGame" class = "com.gmm.action.GameAction" method = "deleteGame">
+         <result name = "success">/Success.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      <action name = "findGame" class = "com.gmm.action.GameAction" method = "findById">
+         <result name = "success">/Result.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <action name = "listAll" class = "com.gmm.action.GameAction" method = "listAll">
+         <result name = "success">/ListGames.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+   </package>
+</struts>

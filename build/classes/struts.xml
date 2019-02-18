@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name = "struts.devMode" value = "true" />
+<!--	<constant name="struts.action.excludePattern" value="/ueditor/.*" /> -->
+	<package name = "strutsNewsWorld" extends = "hibernate-default">
+
+    <!--显示新闻-->
+      <action name = "listAll" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/list_news.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <action name = "showNews" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/index.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+     
+      <action name = "news1" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/news.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+     
+      <action name = "news2" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/news2.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <action name = "news3" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/news3.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <action name = "news4" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/news4.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <action name = "new" class = "com.gmm.action.NewsAction" method = "listAll">
+         <result name = "success">/article.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      
+      
+      
+   <!--添加新闻-->
+     <action name = "insertNews" class = "com.gmm.action.NewsAction" method = "insertNews">
+         <result name = "success" type="chain">listAll</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+        <!--查询新闻-->
+      <action name = "findNews" class = "com.gmm.action.NewsAction" method = "findById">
+         <result name = "success">/update.jsp</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <!--修改新闻-->
+      <action name = "updateNews" class = "com.gmm.action.NewsAction" method = "updateNews">
+         <result name = "success" type="chain">listAll</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+      <!--删除新闻-->
+      <action name = "deleteNews" class = "com.gmm.action.NewsAction" method = "deleteNews">
+         <result name = "success" type="chain">listAll</result>
+         <result name = "error"> /Error.jsp</result>
+      </action>
+      
+ 
+   </package>
+  <!-- <constant name="struts.enable.DynamicMethodInvocarion" value="true"></constant>-->
+</struts>
